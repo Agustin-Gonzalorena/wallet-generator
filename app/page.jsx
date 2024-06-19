@@ -1,5 +1,5 @@
 import BoxElement from "./components/ReactScroll/BoxElement";
-import Welcom from "./components/Welcom/Welcom";
+import Welcome from "./components/Welcome/Welcome";
 import About from "./components/About/About";
 import Generator from "./components/Generator/Generator";
 import Navbar from "./components/Navbar/Navbar";
@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <BoxElement name="home" />
       <Navbar />
-      <Welcom />
+      <Welcome />
       <BoxElement name="about" />
       <About />
       <BoxElement name="generator" />

@@ -16,7 +16,7 @@ const MoreInfo = () => {
               typical mnemonic phrase consists of 12, 15, 18, 21, or 24 words.
             </p>
             <p>
-              ●Ether.js: It is a JavaScript library designed to interact with
+              ● Ether.js: It is a JavaScript library designed to interact with
               the Ethereum blockchain, providing a complete API for creating and
               managing accounts, signing transactions, and communicating with
               smart contracts. It is essential for developers working with
@@ -28,8 +28,8 @@ const MoreInfo = () => {
         <div className="w-full h-52 md:w-1/3 md:h-full p-6">
           <div className="relative w-full h-full">
             <Image
-              src={"/22.png"}
-              alt="etherjs"
+              src={"/astronaut2.webp"}
+              alt="astrounaut reading a book"
               fill
               className="object-contain"
             />

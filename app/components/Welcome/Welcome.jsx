@@ -1,7 +1,7 @@
 import Image from "next/image";
 import BoxButton from "../ReactScroll/BoxButton";
 
-const Welcom = () => {
+const Welcome = () => {
   return (
     <section className="h-dvh max-h-[1000px] w-full flex justify-center items-center">
       <div className="w-full h-2/6 flex flex-col justify-between items-center py-5 md:px-5 gap-16 relative">
@@ -11,9 +11,8 @@ const Welcom = () => {
         <BoxButton section={"generator"} />
         <div className="size-20 rotate-12 absolute right-5 mt-28 lg:size-40 lg:mt-10">
           <Image
-            id="robot"
-            src={"/111.png"}
-            alt="robot fun"
+            src={"/astronaut.webp"}
+            alt="astronaut fun"
             fill
             className="object-contain"
           />
@@ -23,4 +22,4 @@ const Welcom = () => {
   );
 };
 
-export default Welcom;
+export default Welcome;

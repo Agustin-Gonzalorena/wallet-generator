@@ -25,7 +25,7 @@ const Generator = () => {
 
   const generate = () => {
     const result = generateEthereumAccount();
-    const re = [
+    const refactory = [
       {
         title: "Mnemonic",
         clave: result.mnemonic,
@@ -43,18 +43,18 @@ const Generator = () => {
         clave: result.address,
       },
     ];
-    setWallet(re);
+    setWallet(refactory);
   };
   return (
     <section className="w-full flex justify-center items-center mb-24">
-      <div className="w-11/12 p-2 flex flex-col gap-3 bg-[#FAE5F0] shadow-md shadow-black rounded-2xl">
+      <div className="w-11/12 p-2 flex flex-col gap-3 bg-tertiary_a shadow-md shadow-black rounded-2xl">
         {wallet.map((item, index) => (
           <TableItem key={index} title={item.title} clave={item.clave} />
         ))}
         <div className="h-30 w-full flex justify-end">
           <button
             onClick={() => generate()}
-            className="bg-[#534381] text-white px-6 py-4 rounded-2xl hover:shadow-md"
+            className="bg-secondary_e text-white px-6 py-4 rounded-2xl transition-all hover:bg-secondary_d hover:shadow-md"
           >
             Create ETH Address
           </button>
