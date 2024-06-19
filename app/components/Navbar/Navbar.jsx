@@ -18,7 +18,7 @@ const Navbar = () => {
         setShow(!show);
       } else setShow(false);
     });
-  }, [show]);
+  }, []);
   return (
     <div>
       <NavbarBurger show={show} />
