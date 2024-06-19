@@ -12,9 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${dm_sans.className} flex justify-center w-full m-0`}>
-        <main className="w-dvw max-w-[1380px] overflow-hidden ">
-          {children}
-        </main>
+        <main className="w-dvw max-w-[1380px] ">{children}</main>
       </body>
     </html>
   );

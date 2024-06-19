@@ -32,7 +32,7 @@ export default Navbar;
 const NavbarBurger = ({ show }) => {
   const [open, setOpen] = useState(false);
   const classHeader = `w-full h-30 flex justify-between items-center p-4 fixed z-50 transition-colors duration-200 ${
-    show ? "bg-[#ffffffc0] backdrop-blur-lg drop-shadow-xl" : "bg-transparent"
+    show ? "bg-[#ffffffc0] backdrop-blur-lg" : "bg-transparent"
   }`;
   return (
     <div className="flex  lg:hidden">
