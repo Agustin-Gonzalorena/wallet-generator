@@ -3,7 +3,7 @@ import WelcomeButton from "@/app/components/Welcome/WelcomeButton";
 
 const Welcome = () => {
   return (
-    <section className="h-dvh max-h-[1000px] w-full flex justify-center items-center">
+    <section className="h-screen max-h-[1000px] w-full flex justify-center items-center">
       <div className="w-full h-2/6 flex flex-col justify-between items-center py-5 md:px-5 gap-16 relative">
         <h1 className="text-3xl text-center w-full md:text-6xl md:w-4/5 tracking-tight font-bold">
           The simplest and most intuitive app for creating your Ethereum wallet.
