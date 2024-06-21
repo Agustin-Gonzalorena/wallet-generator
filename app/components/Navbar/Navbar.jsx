@@ -63,6 +63,7 @@ const NavbarBurger = ({ show }) => {
                 setOpen(false);
                 scroll({ id: "home" });
               }}
+              className="text-start"
             >
               Home
             </button>
