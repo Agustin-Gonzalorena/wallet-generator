@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className=" w-full flex justify-center mb-24 ">
+    <section id="about" className=" w-full flex justify-center mb-24 ">
       <div className="flex flex-col md:flex-row w-11/12">
         <section className="w-full md:w-2/4">
           <h2 className="text-5xl md:text-6xl font-bold break-words tracking-wide mb-5">

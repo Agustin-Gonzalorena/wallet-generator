@@ -26,7 +26,7 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="md:h-52 w-full flex justify-center ">
+    <footer id="contact" className="md:h-52 w-full flex justify-center ">
       <div className="w-11/12 flex flex-col justify-around">
         <div
           id="up"

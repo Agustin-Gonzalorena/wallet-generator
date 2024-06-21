@@ -1,7 +1,7 @@
 import Image from "next/image";
 const MoreInfo = () => {
   return (
-    <div className="w-full flex justify-center mb-24">
+    <section id="moreInfo" className="w-full flex justify-center mb-24">
       <div className="w-11/12  flex flex-col md:flex-row">
         <div className="w-full md:w-2/3">
           <h2 className="text-4xl md:text-5xl font-bold break-words tracking-wide mb-5">
@@ -36,7 +36,7 @@ const MoreInfo = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

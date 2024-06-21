@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Link } from "react-scroll";
 import Image from "next/image";
+import { scroll } from "@/app/utils/scroll";
 
 export const items = [
   { name: "About", link: "about" },
@@ -58,17 +58,14 @@ const NavbarBurger = ({ show }) => {
                 X
               </p>
             </div>
-            <Link
+            <button
               onClick={() => {
                 setOpen(false);
+                scroll({ id: "home" });
               }}
-              to="home"
-              smooth={true}
-              duration={600}
-              offset={-90}
             >
               Home
-            </Link>
+            </button>
             {items.map((item, index) => (
               <NavbarItem
                 key={index}
@@ -107,27 +104,22 @@ const NavbarDesktop = ({ show }) => {
 };
 export const NavbarItem = ({ name, link, setOpen }) => {
   return (
-    <Link
+    <button
       onClick={() => {
         setOpen ? setOpen(false) : null;
+        scroll({ id: link });
       }}
-      to={link}
-      smooth={true}
-      duration={600}
-      offset={-90}
+      className="hover:text-neutral-500 select-none text-start"
     >
-      <button className="hover:text-neutral-500 select-none">{name}</button>
-    </Link>
+      {name}
+    </button>
   );
 };
 
 const Logo = () => {
   return (
-    <Link
-      to="home"
-      smooth={true}
-      duration={500}
-      offset={-80}
+    <button
+      onClick={() => scroll({ id: "home" })}
       className="w-3/5 h-6 md:w-1/4 md:h-full relative hover:cursor-pointer hover:drop-shadow-sm"
     >
       <Image
@@ -137,6 +129,6 @@ const Logo = () => {
         priority
         className="object-cover drop-shadow-lg "
       />
-    </Link>
+    </button>
   );
 };

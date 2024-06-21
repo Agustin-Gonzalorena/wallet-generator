@@ -2,7 +2,8 @@
 import React, { useState, useRef } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
-import generateEthereumAccount from "@/app/generatorWallet";
+import generateEthereumAccount from "@/app/utils/generatorWallet";
+
 const Generator = () => {
   const [wallet, setWallet] = useState([
     {
@@ -46,7 +47,10 @@ const Generator = () => {
     setWallet(refactory);
   };
   return (
-    <section className="w-full flex justify-center items-center mb-24">
+    <section
+      id="generator"
+      className="w-full flex justify-center items-center mb-24"
+    >
       <div className="w-11/12 p-2 flex flex-col gap-3 bg-tertiary_a shadow-md shadow-black rounded-2xl">
         {wallet.map((item, index) => (
           <TableItem key={index} title={item.title} clave={item.clave} />
