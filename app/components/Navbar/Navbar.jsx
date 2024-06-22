@@ -19,6 +19,7 @@ const Navbar = () => {
       } else setShow(false);
     });
   }, []);
+
   return (
     <div>
       <NavbarBurger show={show} />
@@ -31,6 +32,15 @@ export default Navbar;
 
 const NavbarBurger = ({ show }) => {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    const body = document.getElementById("body");
+    if (open) {
+      body.classList.add("no-scroll");
+    } else {
+      body.classList.remove("no-scroll");
+    }
+  }, [open]);
+
   const classHeader = `w-full h-30 flex justify-between items-center p-4 fixed z-50 transition-colors duration-200 ${
     show ? "bg-[#ffffffc0] backdrop-blur-lg" : "bg-transparent"
   }`;
@@ -43,7 +53,7 @@ const NavbarBurger = ({ show }) => {
         </button>
         <div
           id="navOpen"
-          className={`absolute w-dvw h-dvh top-0 -right-full bg-white transition-opacity duration-300 ${
+          className={`absolute w-dvw h-screen top-0 -right-full bg-white transition-opacity duration-300 ${
             open ? "opacity-100 right-0 left-0 z-50" : "opacity-0 "
           }`}
         >

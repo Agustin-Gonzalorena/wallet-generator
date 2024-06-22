@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 body {
-  min-height: 100dvh;
+  min-height: 100vh;
   background-image: linear-gradient(
     to left top,
     #ffffff,
@@ -62,4 +62,8 @@ svg {
     scroll-behavior: auto !important;
     transition: none;
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
